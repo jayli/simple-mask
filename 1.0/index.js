@@ -106,7 +106,7 @@ KISSY.add(function (S) {
 		},
 		_removeWindowResize:function(){
 			var that = this;
-            S.one(window).detach('touchmove', that._doWindowResize);
+            S.one(window).detach('resize', that._doWindowResize);
 		},
 		_doWindowResize:function(e){
 			var that = this;
